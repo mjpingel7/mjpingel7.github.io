@@ -3,100 +3,112 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
+*{
+    text-align: center;
+}
+
 body {
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+.page {
+    max-width: 350px;
+}
 
 header, nav, main, footer {
     /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width:650px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  max-width:400px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
-    .header {
-    width: 100%;
-    height: 125px;
-    background: navy;
-    margin: auto;
+h1 {
+    float: right;
+    color: black;
+}
+.subheading {
+    float: right;
+    color: black;
     padding: 10px;
 }
 
-.site-name {
-    width: 100%;
-    height: 20px;
-    background: navy;
-    float: left;
-    color: white;
-}
 .logo {
-    margin-left: 15%;
-    height: 75px;
-    background: navy;
     float: right;
 }
 
-.header h1 {
-    
-}
-header img {}
-header .subheading {}
-
 nav {
+    max-width: 350px;
     color:black;
-    background-color: black;
-}
-nav button {}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    background-color: white;
 }
 
 nav ul {
-    display:inline;
     list-style-type: none;
+    width: 400px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: blue;
 }
-/*nav ul li {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}*/
-nav ul li a {}
-nav ul li.active a {}
+
+nav ul li {
+    text-align: center;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
 nav ul li.active a {
-    background-color: #4CAF50;
+    background-color: navy;
+    color: white;
 }
 nav ul li a:hover {
-    background-color: lightgray;
-}
-nav ul li {
-    border-right: 1px solid #bbb;
-}
-
-li:last-child {
-    border-right: none;
+    background-color: navy;
+    color: white;
 }
 
 
-/*main {
+.franklin-img {
+    max-width: 400px;
+}
+
+.logo {
+    width: 75px;
+}
+
+.sun {
+    width: 75px;
+}
+
+.article-img {
+    max-width: 400px;
+    float: left;
+}
+
+.town-article {
+    float: right;
     text-align: center;
-}*/
+}
+franklin-article {
+    border: 1px solid black;
+}
+.h2 {
+    text-align: center;
+}
+
+.city-now {
+    float:left;
+}
+
+.sun{ 
+    float:right;
+}
+
+
+.forecast {
+    visibility: collapse;
+}
+
 main h2 {
     text-align: left;
 }
@@ -110,4 +122,5 @@ footer {
     background-color: black;
     color: white;
     display: block;
+    max-width: 400px;
 }
